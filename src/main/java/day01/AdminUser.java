@@ -1,6 +1,6 @@
 package day01;
 
-public class AdminUser {
+public class AdminUser implements User{
 
     private String email;
     private String password;
@@ -10,5 +10,13 @@ public class AdminUser {
         this.password = password;
     }
 
+    @Override
+    public String getUserEmail() {
+        return this.email;
+    }
 
+    @Override
+    public String getPassword() {
+        return "*".repeat(this.password.length());
+    }
 }
