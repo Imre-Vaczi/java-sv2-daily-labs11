@@ -9,4 +9,14 @@ public class NormalUser implements User{
         this.email = email;
         this.password = password;
     }
+
+    @Override
+    public String getUserEmail() {
+        return this.email;
+    }
+
+    @Override
+    public String getPassword() {
+        return this.password;
+    }
 }
