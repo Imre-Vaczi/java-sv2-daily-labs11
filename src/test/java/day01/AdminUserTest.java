@@ -8,20 +8,20 @@ class AdminUserTest {
 
     @Test
     void testInnit() {
-        AdminUser adminUser = new AdminUser("g@g.org","pass");
-        assertTrue(adminUser != null);
+        User user = new AdminUser("g@g.org","pass");
+        assertTrue(user != null);
     }
 
     @Test
     void testMail() {
-        AdminUser adminUser = new AdminUser("g@g.org","pass");
-        assertEquals("g@g.org", adminUser.getUserEmail());
+        User user = new AdminUser("g@g.org","pass");
+        assertEquals("g@g.org", user.getUserEmail());
     }
 
     @Test
     void testPass() {
-        AdminUser adminUser = new AdminUser("g@g.org","pass");
-        assertEquals("****", adminUser.getPassword());
+        User user = new AdminUser("g@g.org","pass");
+        assertEquals("****", user.getPassword());
     }
 
 }
