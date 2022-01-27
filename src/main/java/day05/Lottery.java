@@ -23,7 +23,7 @@ public class Lottery {
     }
 
     public List<Integer> startLottery() {
-        Random random = new Random(42);
+        Random random = new Random();
         List<Integer> result = new ArrayList<>();
 
         while (result.size() < draws) {

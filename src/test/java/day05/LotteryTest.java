@@ -16,7 +16,9 @@ class LotteryTest {
 
         List<Integer> result = lottery.startLottery();
 
-        assertEquals(Arrays.asList(1,4,9), result);
+        for (int i = 0; i < result.size(); i++) {
+            assertFalse(result.subList(i+1, result.size()).contains(result.get(i)));
+        }
     }
 
 }
